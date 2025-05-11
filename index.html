@@ -1,201 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1259982689204721');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1259982689204721&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TYT CAS1NO</title>
+  <title>Imprenta Córdoba</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       font-family: Arial, sans-serif;
-      background: url('NEGRODORADO.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-      position: relative;
+      flex-wrap: wrap;
     }
-
-    body::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      z-index: 0;
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
     }
-
-    .landing-container {
-      width: 100%;
-      max-width: 400px;
-      background: rgba(15, 23, 42, 0.9);
-      padding: 20px;
-      border-radius: 12px;
+    nav a:hover {
+      background-color: #2c3e50;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+      color: white;
       text-align: center;
-      box-shadow: 0 0 50px rgba(0,0,0,0.3);
-      position: relative;
-      z-index: 1;
+      padding: 100px 20px;
     }
-
-    .banner {
-      background-color: #22c55e;
-      padding: 10px;
-      font-weight: bold;
-      border-radius: 6px;
-      font-size: 14px;
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 36px;
       margin-bottom: 20px;
     }
-
-    h1 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    h1 span {
-      color: #4ade80;
-    }
-
-    .whatsapp-btn {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 18px 24px;
-      font-size: 18px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      margin: 25px 0;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      transition: transform 0.2s ease;
-      animation: bounceIn 1s;
-    }
-
-    .whatsapp-btn:hover {
-      transform: scale(1.05);
-    }
-
-    .description {
-      font-size: 15px;
-      margin-bottom: 25px;
-      color: #cbd5e1;
-    }
-
-    footer {
-      font-size: 12px;
-      color: #94a3b8;
-    }
-
-    .popup {
-      margin-top: 10px;
+    .services {
       display: flex;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 10px;
-      border-radius: 10px;
-      transition: all 0.3s ease;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
     }
-
-    .popup img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+    .service h3 {
+      margin-top: 0;
     }
-
-    .fade {
-      animation: fadeIn 0.4s ease-in-out;
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
     }
-
-    @keyframes bounceIn {
-      0% { transform: scale(0.95); opacity: 0; }
-      60% { transform: scale(1.05); opacity: 1; }
-      100% { transform: scale(1); }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 18px;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="landing-container">
-    <div class="banner">🎰 CAS1NO ONLINE · 30% EN TU PRIMERA</div>
 
-    <h1>Jugá y ganá con<br><span>TYT Casino</span></h1>
+  <header>
+    <h1>Imprenta Córdoba</h1>
+    <p>Calidad y compromiso en cada impresión</p>
+  </header>
 
-<a href="https://wa.me/5492235847567?text=Hola%20quiero%20CR3AR%20UN%20USUAR10"
-   class="whatsapp-btn"
-   onclick="fbq('track', 'Contact')">
-   ENVIAR UN MENSAJE (via Whatsapp)🤩
-</a>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <p class="description">
-      Obtené premios exclusivos, CARGAS Y RETIRÁS tus ganancias las 24hs todos los días.
-    </p>
+  <section class="hero">
+    <h1>Impresiones que destacan</h1>
+    <p>Soluciones gráficas para tu negocio</p>
+  </section>
 
-    <footer>
-      <p>© 2024 TYT Cas1no · Todos los derechos reservados</p>
-      <div class="popup fade" id="popupMessage">
-        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Martín">
-        <span><strong>Martín</strong> ganó <strong>$172.000 ARS</strong> esta semana en TYT CASINO 🎉</span>
+  <section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Tarjetas Personales</h3>
+        <p>Diseños únicos para causar una excelente primera impresión.</p>
       </div>
-    </footer>
-  </div>
+      <div class="service">
+        <h3>Folletos y Volantes</h3>
+        <p>Promociona tus productos o servicios con materiales de calidad.</p>
+      </div>
+      <div class="service">
+        <h3>Impresión Digital</h3>
+        <p>Soluciones rápidas y eficientes para tus necesidades de impresión.</p>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    const mensajes = [
-      { nombre: "Martín", monto: 172000, img: "https://randomuser.me/api/portraits/men/10.jpg" },
-      { nombre: "Julia", monto: 395000, img: "https://randomuser.me/api/portraits/women/22.jpg" },
-      { nombre: "Estefano", monto: 284500, img: "https://randomuser.me/api/portraits/men/32.jpg" },
-      { nombre: "Sofía", monto: 312000, img: "https://randomuser.me/api/portraits/women/18.jpg" },
-      { nombre: "Leandro", monto: 367000, img: "https://randomuser.me/api/portraits/men/45.jpg" },
-      { nombre: "Valentina", monto: 151200, img: "https://randomuser.me/api/portraits/women/41.jpg" },
-      { nombre: "Nicolás", monto: 402000, img: "https://randomuser.me/api/portraits/men/56.jpg" },
-      { nombre: "Camila", monto: 278000, img: "https://randomuser.me/api/portraits/women/30.jpg" }
-    ];
+  <section id="nosotros" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>Con más de 10 años en el mercado, ofrecemos servicios de impresión de alta calidad en Córdoba, Argentina. Nuestro compromiso es brindar soluciones gráficas que superen las expectativas de nuestros clientes.</p>
+  </section>
 
-    let index = 0;
-    const popup = document.getElementById("popupMessage");
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Dirección: Av. Siempre Viva 123, Córdoba, Argentina</p>
+    <p>Teléfono: (0351) 6200880</p>
+    <p>Email: contacto@imprentacordoba.com</p>
+  </section>
 
-    function actualizarMensaje() {
-      const usuario = mensajes[index];
-      popup.classList.remove("fade");
-      void popup.offsetWidth;
-      popup.innerHTML = `
-        <img src="${usuario.img}" alt="${usuario.nombre}">
-        <span><strong>${usuario.nombre}</strong> ganó <strong>$${usuario.monto.toLocaleString()} ARS</strong> esta semana en TYT CASINO 🎉</span>
-      `;
-      popup.classList.add("fade");
-      index = (index + 1) % mensajes.length;
-    }
+  <footer>
+    <p>&copy; 2025 Imprenta Córdoba. Todos los derechos reservados.</p>
+  </footer>
 
-    setInterval(actualizarMensaje, 4000);
-  </script>
 </body>
 </html>
